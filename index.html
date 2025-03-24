@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors - Epic Survival Adventure Game | You88VIP</title>
-    <meta name="description" content="Play Monster Survivors, an exciting survival game where you battle against waves of monsters. Experience intense gameplay, upgrade your character, and survive in this thrilling adventure.">
-    <link rel="canonical" href="https://you88vip.com/monster-survivors" />
+    <title>You88VIP - Best Online Games Collection</title>
+    <meta name="description" content="Discover and play the best online games at You88VIP. From action to puzzle games, find your next favorite game here.">
+    <link rel="canonical" href="https://you88vip.com" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3X2B6HPZ6"></script>
     <script>
@@ -22,10 +22,14 @@
             font-family: 'Inter', sans-serif;
             background-color: #f5f5f7;
         }
-        .game-container {
-            aspect-ratio: 16/9;
-            max-width: 100%;
-            height: auto;
+        .game-card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .game-card:hover {
+            transform: translateY(-4px);
+        }
+        .rating-stars {
+            color: #fbbf24;
         }
     </style>
 </head>
@@ -39,47 +43,33 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <article class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Monster Survivors</h1>
-            <p class="text-xl text-gray-600 mb-8">Embark on an epic survival adventure where you battle against waves of relentless monsters in this thrilling action-packed game.</p>
-
-            <div class="mb-8">
-                <div class="game-container bg-gray-100 rounded-lg overflow-hidden">
-                    <iframe 
-                        src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
-                        class="w-full h-full border-0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Featured Games</h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Monster Survivors Game Card -->
+            <a href="/monster-survivors" class="game-card block bg-[#1a1b1e] rounded-xl overflow-hidden shadow-lg">
+                <div class="aspect-video bg-blue-600 relative overflow-hidden">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="text-4xl font-bold text-white">Monster Survivors</span>
+                    </div>
+                    <div class="absolute inset-0 bg-blue-600 opacity-50"></div>
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.4)_100%)]"></div>
                 </div>
-            </div>
-
-            <div class="prose max-w-none">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Game Overview</h2>
-                <p class="text-gray-600 mb-6">Monster Survivors is an engaging survival game that puts your strategic thinking and reflexes to the test. As you progress through increasingly challenging waves of monsters, you'll need to upgrade your character's abilities and choose the right weapons to survive.</p>
-
-                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Key Features</h2>
-                <ul class="list-disc pl-6 text-gray-600 mb-6">
-                    <li>Intense wave-based combat system</li>
-                    <li>Character progression and upgrades</li>
-                    <li>Diverse monster types with unique abilities</li>
-                    <li>Strategic gameplay elements</li>
-                    <li>Engaging visual effects and animations</li>
-                </ul>
-
-                <h2 class="text-2xl font-semibold text-gray-900 mb-4">How to Play</h2>
-                <p class="text-gray-600 mb-6">Use your mouse or touch controls to move your character and attack monsters. Collect experience points to level up and choose powerful upgrades. Each wave brings new challenges and stronger enemies, so plan your strategy carefully to survive as long as possible.</p>
-
-                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Tips for Success</h2>
-                <ul class="list-disc pl-6 text-gray-600">
-                    <li>Focus on upgrading your core abilities first</li>
-                    <li>Learn monster patterns and attack timing</li>
-                    <li>Use the environment to your advantage</li>
-                    <li>Manage your resources wisely</li>
-                    <li>Experiment with different upgrade combinations</li>
-                </ul>
-            </div>
-        </article>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-white mb-1">Monster Survivors</h2>
+                    <div class="flex items-center gap-1 mb-2">
+                        <div class="rating-stars">★★★★★</div>
+                        <span class="text-white opacity-90">4.7</span>
+                        <span class="text-white opacity-60 ml-auto">Puzzle</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Test your survival skills in this intense action-packed adventure.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <button class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">Play Now</button>
+                        <span class="text-blue-400 text-sm">More Info</span>
+                    </div>
+                </div>
+            </a>
+        </div>
     </main>
 
     <footer class="bg-white border-t mt-12">
@@ -88,4 +78,4 @@
         </div>
     </footer>
 </body>
-</html> 
+</html>
