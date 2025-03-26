@@ -45,31 +45,53 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h1 class="text-3xl font-bold text-gray-900 mb-8">Featured Games</h1>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Monster Survivors Game Card -->
-            <a href="/monster-survivors" class="game-card block bg-[#1a1b1e] rounded-xl overflow-hidden shadow-lg">
-                <div class="aspect-video bg-blue-600 relative overflow-hidden">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <span class="text-4xl font-bold text-white">Monster Survivors</span>
-                    </div>
-                    <div class="absolute inset-0 bg-blue-600 opacity-50"></div>
-                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.4)_100%)]"></div>
+        // ... existing code ...
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Monster Survivors Game Card -->
+    <div class="game-card block bg-white rounded-xl overflow-hidden shadow-lg">
+        <!-- Game Screenshot -->
+        <div class="aspect-video relative overflow-hidden">
+            <img 
+                src="/images/monster-survivors-gameplay.jpg" 
+                alt="Monster Survivors Gameplay" 
+                class="w-full h-full object-cover"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 16 9\' fill=\'%23e5e7eb\'%3E%3Crect width=\'16\' height=\'9\'/%3E%3C/svg%3E'"
+            >
+        </div>
+        <!-- Game Info -->
+        <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">Monster Survivors</h2>
+            <div class="flex items-center gap-1 mb-3">
+                <div class="flex text-yellow-400">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
                 </div>
-                <div class="p-4">
-                    <h2 class="text-xl font-semibold text-white mb-1">Monster Survivors</h2>
-                    <div class="flex items-center gap-1 mb-2">
-                        <div class="rating-stars">★★★★★</div>
-                        <span class="text-white opacity-90">4.7</span>
-                        <span class="text-white opacity-60 ml-auto">Puzzle</span>
-                    </div>
-                    <p class="text-sm text-gray-400">Test your survival skills in this intense action-packed adventure.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <button class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">Play Now</button>
-                        <span class="text-blue-400 text-sm">More Info</span>
-                    </div>
-                </div>
+                <span class="text-gray-600 font-medium">4.7</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-4 line-clamp-2">Test your survival skills in this intense action-packed adventure where you battle against waves of relentless monsters.</p>
+            <a 
+                href="/monster-survivors" 
+                class="inline-block w-full bg-blue-600 text-white text-center px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+            >
+                Play Now
             </a>
         </div>
+    </div>
+</div>
+// ... existing code ...
     </main>
 
     <footer class="bg-white border-t mt-12">
